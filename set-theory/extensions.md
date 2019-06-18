@@ -6,7 +6,7 @@
 
 对于给定的集合S，其所有可能子集的族，称为集合S的幂集。记作：Power(S)。如果S为有限集，则Power(S)也是有限集。并且：
 
-$|Power(S)| = 2 ^ {|S|}​$
+$|Power(S)| = 2 ^ {|S|}$
 
 ### 划分
 
@@ -15,7 +15,7 @@ $|Power(S)| = 2 ^ {|S|}​$
 1. S中的每个元素a属于一个$A_i$；
 2. 中的集合互不相交，即对于两个不同的集合， $A_i ∩ A_j = \varnothing$。
 
-${A_i}​$划分中的子集叫**胞腔**。
+${A_i}$划分中的子集叫**胞腔**。
 $$
 partition(S) = \{ A | (\forall x \in S, \exists A \to x \in A) \land (\forall A_i, \forall A_j, A_i \neq A_j \to A_i \cap A_j = \emptyset)\}
 $$
@@ -24,7 +24,7 @@ $$
 
 ### 定理1.7
 
-设 $\mathscr{A}​$ 为集族，则：
+设 $\mathscr{A}$ 为集族，则：
 $$
 [ \cup(A | A \in \mathscr{A}) ]^c = \cap(A^c | A \in \mathscr{A}) \\
 [ \cap(A | A \in \mathscr{A}) ]^c = \cup(A^c | A \in \mathscr{A})
@@ -36,8 +36,8 @@ $$
 
 设 P 是定义于正整数集合N上的一个命题，即对N中的每个n，P(n) 或者正确或者不正确。假设P具有下列两个性质：
 
-    1. P(1)为真，
-    2. 只要P(n)为真，P(n+1)亦为真
+1. $P(1)$为真，
+2. 只要$P(n)$为真，$P(n+1$)亦为真
 
 则对任意正整数，P都为真。
 
