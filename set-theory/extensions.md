@@ -6,18 +6,16 @@
 
 对于给定的集合S，其所有可能子集的族，称为集合S的幂集。记作：Power(S)。如果S为有限集，则Power(S)也是有限集。并且：
 
-$|Power(S)| = 2 ^ {|S|}$
+$|Power(S)| = 2 ^ {|S|}​$
 
 ### 划分
 
-设S是一个非集合，S的一个划分是将S剖分为一些不交叠的非空子集。即：S的一个划分是S的一族非空子集${A_i}​$，满足：
+设S是一个非集合，S的一个划分是将S剖分为一些不交叠的非空子集。即：S的一个划分是S的一族非空子集${A_i}$，满足：
 
-    1. S中的每个元素a属于一个$A_i$；
+1. S中的每个元素a属于一个$A_i$；
+2. 中的集合互不相交，即对于两个不同的集合， $A_i ∩ A_j = \varnothing$。
 
-2. ${A_i}$中的集合互不相交，即对于两个不同的集合， $A_i ∩ A_j = \varnothing$。
-
-划分中的子集叫**胞腔**。
-
+${A_i}​$划分中的子集叫**胞腔**。
 $$
 partition(S) = \{ A | (\forall x \in S, \exists A \to x \in A) \land (\forall A_i, \forall A_j, A_i \neq A_j \to A_i \cap A_j = \emptyset)\}
 $$
@@ -26,7 +24,7 @@ $$
 
 ### 定理1.7
 
-设 $\mathscr{A}$ 为集族，则：
+设 $\mathscr{A}​$ 为集族，则：
 $$
 [ \cup(A | A \in \mathscr{A}) ]^c = \cap(A^c | A \in \mathscr{A}) \\
 [ \cap(A | A \in \mathscr{A}) ]^c = \cup(A^c | A \in \mathscr{A})
