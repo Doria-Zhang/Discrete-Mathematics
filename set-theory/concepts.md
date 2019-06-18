@@ -71,13 +71,13 @@ E = {2, 4, 6, 8, 10, ...}
 A ⊆ B 或 B ⊇ A
 
 或者A不是B的子集，即A至少有一个元素不属于B，则记作
-`A \nsubseteq B` 或者 `A \not\subseteq B`，
-`A \nsuperseteq A` 或者 `B \not\superseteq A`。
+$A \nsubseteq B​$ 或者 $A\not \quad \subseteq B​$，
+$A \nsupseteq A​$ 或者 $B \not \quad \supseteq A​$。
 
 ### 定理1.1
 
-  - 对于任意集合A, ∅ <= A <= U
-  - 对于任意集合A，A <= A
-  - 如果A <= B，且 B<= C，则 A<= C
-  - A = B 当且仅当 A <= B 且 B <= A
+  - 对于任意集合A, $\varnothing \subseteq A \subseteq U$
+  - 对于任意集合A，$A \subseteq A​$
+  - 如果$A \subseteq B$，且 $B\subseteq C，$则 $A\subseteq C$
+  - A = B 当且仅当 $\subseteq$ 且 $B \subseteq A​$
 
