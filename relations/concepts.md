@@ -1,8 +1,8 @@
 ## 有序偶
 
-关系由元素的有序偶(a, b)来定义，这里a作为第一元素，b为第二元素。
+关系由元素的有序偶$(a, b)$来定义，这里$a$作为第一元素，$b$为第二元素。
 
-特别地，(a, b) = (c, d) 当且仅当 a = c 且 b = d。
+特别地，$(a, b) = (c, d)$ 当且仅当 $a = c$ 且 $b = d$。
 
 ### 使用集合定义有序偶
 
@@ -13,7 +13,7 @@ $$
 
 - Hausdorff
 $$
-(a, b) := {{a, 1}, {b, 2}}
+(a, b) := \{(a, 1)\}, (b, 2)\}
 $$
 （注：此处的 1 和 2 不是数字 1 和 2，而是代表与 a 和 b 不相等的两个互不相等的元素）
 
@@ -42,36 +42,78 @@ $$
 
 对于任意两个集合A，B，称所有有序偶(a, b)的集合为A，B的积或笛卡尔积，其中 a ∈ A，b ∈ B。
 A，B的积记作 A × B。
-
-A × B = {(a, b): a ∈ A 且 b ∈ B}
-
-A × A 通常也记作 A^2。
+$$
+A × B = \{(a, b): a ∈ A 且 b ∈ B\}
+$$
+$A × A$ 通常也记作 $A^2$。
 
 笛卡尔积有以下性质：
   1. not commutative:
-     A != B -> A × B != B × A
-     A × B = B × A <--> A = B
+     $$
+     A \neq B \Rightarrow   A × B \neq B × A 
+$$
+     
+     $$
+     A × B = B × A \iff A = B
+     $$
+     
+  2. $$
+     n(A × B) = n(B × A) = n(A) n(B)
+     $$
 
-  2. n(A × B) = n(B × A) = n(A) n(B)
+     
 
   3. not associative:
-     (A × B) × C != A × (B × C)
-
-  4. A × (B ∩ C) = (A × B) ∩ (A × C)
+     $$
+(A × B) × C \ne	 A × (B × C)
+     $$
+     
+     
+  4. $$
+     A × (B ∩ C) = (A × B) ∩ (A × C)
+     $$
+     
+$$
      A × (B ∪ C) = (A × B) ∪ (A × C)
-     A × (B \ C) = (A × B) \ (A × C)
+     $$
+     
+     $$
+     A × (B \setminus C) = (A × B) \setminus (A × C)
+     $$
+     
+     $$
      (A × C)^C = (A^C × B^C) ∪ (A^C × B)  ∪ (A × B^C)
+     $$
+     
+  5. 
+     $$
+     (A ∩ B) × (C  ∩ D) = (A × C) ∩ (B × D)
+     $$
 
-  5. (A ∩ B) × (C  ∩ D) = (A × C) ∩ (B × D)
-
+     $$
      (A ∪ B) × (C ∪ D) \neq (A × C) ∪ (B × D)
+     $$
 
-     (A ∪ B) × (C ∪ D) = [(A \ B) × C] ∪ [(A ∩ B) × (C ∪ D)]  ∪ [(B \ A)  × D]
+     $$
+     (A ∪ B) × (C ∪ D) = [(A \setminus B) × C] ∪ [(A ∩ B) × (C ∪ D)]  ∪ [(B \setminus A)  × D]
+     $$
 
-     (A × C) \ (B × D) = [A ×(C \ D)] ∪ [(A \ B) × C]
+     $$
+     (A × C) \setminus (B × D) = [A ×(C \setminus D)] ∪ [(A \setminus B) × C]
+     $$
 
-  6. A ⊆ B -> A × C ⊆ B × C
+     
+
+  6. $$
+     A ⊆ B -> A × C ⊆ B × C
+     $$
+     
+     $$
      A, B != ∅ -> (A × B ⊆ C × D <--> A ⊆ C \land B ⊆ D)
+     $$
+     
+     
+     
 
 ### 笛卡尔平面
 
