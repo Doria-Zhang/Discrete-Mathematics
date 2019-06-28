@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     29815,        826]
-NotebookOptionsPosition[     25138,        761]
-NotebookOutlinePosition[     25597,        779]
-CellTagsIndexPosition[     25554,        776]
+NotebookDataLength[     33724,        938]
+NotebookOptionsPosition[     28841,        871]
+NotebookOutlinePosition[     29302,        889]
+CellTagsIndexPosition[     29259,        886]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -753,14 +753,124 @@ Cell["d.", "Text",
 13c5d0c2ca9f"],
 
 Cell[BoxData[
- FormBox["", TraditionalForm]], "EquationNumbered",
- CellChangeTimes->{{3.7706986921658926`*^9, 
-  3.770698692175867*^9}},ExpressionUUID->"d8902a95-bcab-4df1-abe7-\
-75d1af6a76fc"]
+ FormBox[GridBox[{
+    {
+     RowBox[{"\[Not]", 
+      RowBox[{"(", 
+       RowBox[{"p", "\[CirclePlus]", "q"}], ")"}]}], "\[Congruent]", 
+     RowBox[{"\[Not]", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"p", "\[And]", 
+          RowBox[{"\[Not]", "q"}]}], ")"}], "\[Or]", 
+        RowBox[{"(", 
+         RowBox[{"q", "\[And]", 
+          RowBox[{"\[Not]", "p"}]}], ")"}]}], ")"}]}]},
+    {" ", "\[Congruent]", 
+     RowBox[{
+      RowBox[{"\[Not]", 
+       RowBox[{"(", 
+        RowBox[{"p", "\[And]", 
+         RowBox[{"\[Not]", "q"}]}], ")"}]}], "\[And]", 
+      RowBox[{"\[Not]", 
+       RowBox[{"(", 
+        RowBox[{"q", "\[And]", 
+         RowBox[{"\[Not]", "p"}]}], ")"}]}]}]},
+    {" ", "\[Congruent]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"\[Not]", "p"}], "\[Or]", "q"}], ")"}], "\[And]", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"\[Not]", "q"}], "\[Or]", "p"}], ")"}]}]},
+    {" ", "\[Congruent]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"p", "\[Implies]", "q"}], ")"}], "\[And]", 
+      RowBox[{"(", 
+       RowBox[{"q", "\[Implies]", "p"}], ")"}]}]},
+    {" ", "\[Congruent]", 
+     RowBox[{"p", "\[DoubleLeftRightArrow]", "q"}]}
+   }], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.7706985231882677`*^9, 3.7706985480936546`*^9}, {
+  3.77069859170598*^9, 3.7706986338188214`*^9}, {3.770701672852566*^9, 
+  3.770701681177674*^9}, {3.770702001195279*^9, 
+  3.7707021056500063`*^9}},ExpressionUUID->"6d16c235-7e10-4615-a731-\
+f742e4e6588f"],
+
+Cell["e.", "Text",
+ CellChangeTimes->{{3.770702260114272*^9, 
+  3.770702261597271*^9}},ExpressionUUID->"252f2257-213e-4d30-8b72-\
+9097d6c766ef"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\[NoBreak]", GridBox[{
+     {
+      RowBox[{
+       RowBox[{
+        FormBox[
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"p", "\[Implies]", "q"}], ")"}], "\[Implies]", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"r", "\[Implies]", "p"}], ")"}], "\[Implies]", 
+            RowBox[{"(", 
+             RowBox[{"r", "\[Implies]", "q"}]}]}]}]}],
+         TraditionalForm], ")"}], ")"}], "\[Congruent]", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"p", "\[Implies]", "q"}], ")"}], "\[Implies]", 
+       RowBox[{"(", 
+        RowBox[{"q", "\[Or]", 
+         RowBox[{"\[Not]", "p"}], "\[Or]", 
+         RowBox[{"\[Not]", "r"}]}], ")"}]}]},
+     {" ", "\[Congruent]", 
+      RowBox[{
+       RowBox[{"\[Not]", 
+        RowBox[{"(", 
+         RowBox[{"p", "\[Implies]", "q"}], ")"}]}], "\[Or]", 
+       RowBox[{"(", 
+        RowBox[{"q", "\[Or]", 
+         RowBox[{"\[Not]", "p"}], "\[Or]", 
+         RowBox[{"\[Not]", "r"}]}], ")"}]}]},
+     {" ", "\[Congruent]", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"p", "\[And]", 
+         RowBox[{"\[Not]", "q"}]}], ")"}], "\[Or]", "q", "\[Or]", 
+       RowBox[{"\[Not]", "p"}], "\[Or]", 
+       RowBox[{"\[Not]", "r"}]}]},
+     {" ", "\[Congruent]", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"p", "\[Or]", "q", "\[Or]", 
+         RowBox[{"\[Not]", "p"}], "\[Or]", 
+         RowBox[{"\[Not]", "r"}]}], ")"}], "\[And]", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"\[Not]", "q"}], "\[Or]", "q", "\[Or]", 
+         RowBox[{"\[Not]", "p"}], "\[Or]", 
+         RowBox[{"\[Not]", "r"}]}], ")"}]}]},
+     {" ", "\[Congruent]", 
+      RowBox[{"T", "\[And]", "T"}]},
+     {" ", "\[Congruent]", "T"}
+    }], "\[NoBreak]"}], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{
+  3.77070228896841*^9, {3.770702349086856*^9, 3.770702405130309*^9}, {
+   3.770702447006682*^9, 3.7707024701292048`*^9}, {3.770702560784143*^9, 
+   3.7707026412485895`*^9}, {3.77070269444477*^9, 3.770702696564101*^9}, {
+   3.770702858923751*^9, 
+   3.7707029484657507`*^9}},ExpressionUUID->"89418fc6-2a27-44b7-9721-\
+f69e08db0f71"]
 }, Open  ]]
 },
-WindowSize->{1616, 2037},
-WindowMargins->{{Automatic, -14}, {Automatic, 0}},
+WindowSize->{3240, 2055},
+WindowMargins->{{-16, Automatic}, {Automatic, -16}},
 Magnification:>3. Inherited,
 FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (2018\:5e743\:670828\
 \:65e5)",
@@ -800,7 +910,7 @@ Cell[6579, 187, 164, 3, 98, "Text",ExpressionUUID->"6e36b0ad-18df-48dd-afc2-daf5
 Cell[6746, 192, 145, 3, 98, "Text",ExpressionUUID->"9c719ea5-7805-41bc-96b7-b10ec337a1ee"],
 Cell[6894, 197, 528, 16, 98, "Text",ExpressionUUID->"5233f3a1-3d4e-44c4-9711-9360b57447be"],
 Cell[7425, 215, 1582, 47, 409, "EquationNumbered",ExpressionUUID->"0e7405b4-6015-4aba-aa55-9a52c740128c"],
-Cell[9010, 264, 226, 5, 98, "Text",ExpressionUUID->"4f4ef914-ff89-4deb-a477-f0cf283e5520"],
+Cell[9010, 264, 226, 5, 173, "Text",ExpressionUUID->"4f4ef914-ff89-4deb-a477-f0cf283e5520"],
 Cell[9239, 271, 196, 4, 98, "Text",ExpressionUUID->"4d117c5d-ce61-4ca1-97fb-9f76b2d564d4"],
 Cell[9438, 277, 495, 13, 98, "Text",ExpressionUUID->"a54d3fbb-b600-43bb-b178-54cefa7c3990"],
 Cell[9936, 292, 1685, 48, 697, "EquationNumbered",ExpressionUUID->"c5f053f4-447f-471a-ae8c-2933891963bd"],
@@ -816,7 +926,7 @@ Cell[18025, 538, 1950, 55, 697, "EquationNumbered",ExpressionUUID->"9e35b02f-604
 Cell[19978, 595, 292, 5, 98, "Text",ExpressionUUID->"31fd7349-4c3a-42f4-855f-4169bf3b2a29"],
 Cell[20273, 602, 142, 3, 98, "Text",ExpressionUUID->"77564a66-096b-41b2-96c4-0a5c57ff5c55"],
 Cell[CellGroupData[{
-Cell[20440, 609, 223, 5, 188, "Subsubsubsection",ExpressionUUID->"3aec212c-9807-43e9-955f-b3f8e91f56ad"],
+Cell[20440, 609, 223, 5, 112, "Subsubsubsection",ExpressionUUID->"3aec212c-9807-43e9-955f-b3f8e91f56ad"],
 Cell[20666, 616, 144, 3, 98, "Text",ExpressionUUID->"d8f37318-c8d8-4b4c-ab12-033b1c3cc2d0"],
 Cell[20813, 621, 1340, 42, 404, "EquationNumbered",ExpressionUUID->"7e9c8a68-c651-4974-9e85-c9137a3a53dd"],
 Cell[22156, 665, 144, 3, 98, "Text",ExpressionUUID->"a90fd4d9-e48d-4270-9746-edaee566b28a"],
@@ -826,7 +936,9 @@ Cell[23499, 708, 144, 3, 98, "Text",ExpressionUUID->"5e1f117f-1e46-49d7-b6d4-a1f
 Cell[23646, 713, 603, 17, 188, "EquationNumbered",ExpressionUUID->"13cabb65-767c-46d1-a822-36bb2c9809e8"],
 Cell[24252, 732, 523, 15, 125, "EquationNumbered",ExpressionUUID->"fb7cbbef-bf84-4585-9133-eb83d631029a"],
 Cell[24778, 749, 148, 3, 98, "Text",ExpressionUUID->"9ba75e33-10b0-48b0-96b4-13c5d0c2ca9f"],
-Cell[24929, 754, 193, 4, 125, "EquationNumbered",ExpressionUUID->"d8902a95-bcab-4df1-abe7-75d1af6a76fc"]
+Cell[24929, 754, 1565, 46, 404, "EquationNumbered",ExpressionUUID->"6d16c235-7e10-4615-a731-f742e4e6588f"],
+Cell[26497, 802, 144, 3, 98, "Text",ExpressionUUID->"252f2257-213e-4d30-8b72-9097d6c766ef"],
+Cell[26644, 807, 2181, 61, 476, "EquationNumbered",ExpressionUUID->"89418fc6-2a27-44b7-9721-f69e08db0f71"]
 }, Open  ]]
 }
 ]
