@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     33724,        938]
-NotebookOptionsPosition[     28841,        871]
-NotebookOutlinePosition[     29302,        889]
-CellTagsIndexPosition[     29259,        886]
+NotebookDataLength[     38365,       1067]
+NotebookOptionsPosition[     32760,        992]
+NotebookOutlinePosition[     33219,       1010]
+CellTagsIndexPosition[     33176,       1007]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -866,11 +866,132 @@ Cell[BoxData[
    3.7707026412485895`*^9}, {3.77070269444477*^9, 3.770702696564101*^9}, {
    3.770702858923751*^9, 
    3.7707029484657507`*^9}},ExpressionUUID->"89418fc6-2a27-44b7-9721-\
-f69e08db0f71"]
+f69e08db0f71"],
+
+Cell[TextData[StyleBox["Q.3 Show that (p \[RightArrow] q) \[And] (q \
+\[RightArrow] r) \[RightArrow] (p \[RightArrow] r) is a tautology.", \
+"Subsubsubsection"]], "Text",
+ CellChangeTimes->{
+  3.7707037047760153`*^9},ExpressionUUID->"77d56ce6-53bd-4049-ba24-\
+aeb98f774180"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"\[Not]", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"p", "\[Implies]", "q"}], ")"}], "\[And]", 
+       RowBox[{"(", 
+        RowBox[{"q", "\[Implies]", "r"}], ")"}]}], ")"}], "\[Congruent]", 
+     RowBox[{"\[Not]", 
+      RowBox[{"(", 
+       RowBox[{"p", "\[Implies]", "q"}], ")"}]}]}]}], "\[Or]", 
+   RowBox[{"\[Not]", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"q", "\[Implies]", "r"}], ")"}], "\[Congruent]", 
+     RowBox[{"(", 
+      RowBox[{"p", "\[And]", 
+       RowBox[{"\[Not]", "q"}]}], ")"}]}]}], "\[Or]", 
+   RowBox[{"(", 
+    RowBox[{"q", "\[And]", 
+     RowBox[{"\[Not]", "r"}]}], ")"}]}], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.7707036672756634`*^9, 3.770703837558194*^9}, {
+  3.770703879373592*^9, 
+  3.7707039045733843`*^9}},ExpressionUUID->"bd60b65e-eefd-4392-8ce7-\
+937c2680dea2"],
+
+Cell["\tHence", "Text",
+ CellChangeTimes->{{3.7707041839080253`*^9, 
+  3.770704185902708*^9}},ExpressionUUID->"83309fc6-120d-44fb-b651-\
+bccda8a204f7"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"p", "\[Implies]", "q"}], ")"}], "\[And]", 
+    RowBox[{"(", 
+     RowBox[{"q", "\[Implies]", "r"}], ")"}]}], "\[Implies]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"p", "\[Implies]", "r"}], ")"}], "\[Congruent]", 
+     RowBox[{"(", 
+      RowBox[{"p", "\[And]", 
+       RowBox[{"\[Not]", "q"}]}], ")"}]}], "\[Or]", 
+    RowBox[{"(", 
+     RowBox[{"q", "\[And]", 
+      RowBox[{"\[Not]", "r"}]}], ")"}], "\[Or]", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"\[Not]", "p"}], "\[Or]", "r"}], ")"}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.7707041878135796`*^9, 
+  3.770704237616314*^9}},ExpressionUUID->"d958337a-c53b-4388-978f-\
+9a4e31b62575"],
+
+Cell[TextData[{
+ "\tIf which is not tautology, we can find some ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"p", ",", "q", ",", "r"}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "9bef1177-dadc-4c48-b9a3-38bc57a03827"],
+ " to make it false. Firstly, ",
+ Cell[BoxData[
+  FormBox["p", TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "e02da42f-bacf-4e31-b947-40a1db59b443"],
+ " should be true and ",
+ Cell[BoxData[
+  FormBox["r", TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "8a7f5a6f-3acf-4458-a111-28cdc2ec31a2"],
+ " should be false otherwise ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"\[Not]", "p"}], "\[Or]", "r"}], ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "a13f8796-2244-4c02-bd59-51afef9e3186"],
+ " is true. However:"
+}], "Text",
+ InitializationCell->True,
+ CellChangeTimes->{{3.770710832531209*^9, 3.7707108364766283`*^9}, {
+  3.770710875955209*^9, 3.7707108813318286`*^9}, {3.7707110485759892`*^9, 
+  3.7707111720720496`*^9}},ExpressionUUID->"5aa851fc-1e71-452b-9d9b-\
+2ce617e00fbc"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{"p", "\[And]", 
+     RowBox[{"\[Not]", "q"}]}], ")"}], "\[Or]", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"q", "\[And]", 
+      RowBox[{"\[Not]", "r"}]}], ")"}], "\[Congruent]", 
+    RowBox[{"-", "q"}]}], "\[Or]", 
+   RowBox[{"q", "\[Congruent]", "T"}]}], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.770711142759724*^9, 
+  3.770711192407941*^9}},ExpressionUUID->"5e33c14c-500d-4bc7-87db-\
+d1290dc64ba0"],
+
+Cell["\tSo it\[CloseCurlyQuote]s taotology.", "Text",
+ CellChangeTimes->{{3.770711197800042*^9, 
+  3.7707112238760223`*^9}},ExpressionUUID->"97c8ae16-e4b4-4ba8-8238-\
+f4111d28cc0e"]
 }, Open  ]]
 },
-WindowSize->{3240, 2055},
-WindowMargins->{{-16, Automatic}, {Automatic, -16}},
+WindowSize->{1616, 2037},
+WindowMargins->{{Automatic, -14}, {Automatic, 0}},
 Magnification:>3. Inherited,
 FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (2018\:5e743\:670828\
 \:65e5)",
@@ -938,7 +1059,15 @@ Cell[24252, 732, 523, 15, 125, "EquationNumbered",ExpressionUUID->"fb7cbbef-bf84
 Cell[24778, 749, 148, 3, 98, "Text",ExpressionUUID->"9ba75e33-10b0-48b0-96b4-13c5d0c2ca9f"],
 Cell[24929, 754, 1565, 46, 404, "EquationNumbered",ExpressionUUID->"6d16c235-7e10-4615-a731-f742e4e6588f"],
 Cell[26497, 802, 144, 3, 98, "Text",ExpressionUUID->"252f2257-213e-4d30-8b72-9097d6c766ef"],
-Cell[26644, 807, 2181, 61, 476, "EquationNumbered",ExpressionUUID->"89418fc6-2a27-44b7-9721-f69e08db0f71"]
+Cell[26644, 807, 2181, 61, 476, "EquationNumbered",ExpressionUUID->"89418fc6-2a27-44b7-9721-f69e08db0f71"],
+Cell[28828, 870, 274, 5, 193, "Text",ExpressionUUID->"77d56ce6-53bd-4049-ba24-aeb98f774180"],
+Cell[29105, 877, 914, 27, 203, "EquationNumbered",ExpressionUUID->"bd60b65e-eefd-4392-8ce7-937c2680dea2"],
+Cell[30022, 906, 151, 3, 98, "Text",ExpressionUUID->"83309fc6-120d-44fb-b651-bccda8a204f7"],
+Cell[30176, 911, 769, 24, 203, "EquationNumbered",ExpressionUUID->"d958337a-c53b-4388-978f-9a4e31b62575"],
+Cell[30948, 937, 1123, 31, 247, "Text",ExpressionUUID->"5aa851fc-1e71-452b-9d9b-2ce617e00fbc",
+ InitializationCell->True],
+Cell[32074, 970, 486, 14, 125, "EquationNumbered",ExpressionUUID->"5e33c14c-500d-4bc7-87db-d1290dc64ba0"],
+Cell[32563, 986, 181, 3, 98, "Text",ExpressionUUID->"97c8ae16-e4b4-4ba8-8238-f4111d28cc0e"]
 }, Open  ]]
 }
 ]
