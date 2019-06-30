@@ -146,4 +146,4 @@ $$
 
 获得多变量否定量词语句的具体做法是：
 
-将否定符号从左向右移动，同时将每个\forall 换成\exists 而将每个\exists 换成 \forall。
+将否定符号从左向右移动，同时将每个$\forall$ 换成$\exists$ 而将每个$\exists$ 换成 $\forall$。
