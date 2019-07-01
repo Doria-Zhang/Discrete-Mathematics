@@ -8,7 +8,7 @@
   a. 结合律： $(a + b) + c = a + (b + c), (ab)c = a(bc)$
   b. 交换律： $a + b = b + a, ab = ba$
   c. 分配律： $a(b + c) = ab + ac$
-  d. 单位元律： $a + 0 = 0 + a = a, a * 1 = 1 * a = a$
+  d. 单位元律： $a + 0 = 0 + a = a, a \times 1 = 1 * a = a$
   e. 对于任何元素a 都有加法逆元 -a，即：$a + (-a) = (-a) + a = 0$
 
 **算术基本定理** 每一个正整数n(n > 1)都可以唯一地写成素数的积。
@@ -165,36 +165,36 @@ $$
 
 设 a， b 是整数且不全为0，整数d称为a，b的公因子，如果 $d \mid a$ 且 $d \mid b$。
 注意 1 是 a 和 b的正的公因子，a 和 b 的任何公因子都不能大于 |a| 和 |b|，
-所以存在一个最大的公因子，记为：
+所以存在一个最大的公因子，记
 $$
-\text{gcd}(a, b)
+\gcd(a,b)
 $$
 称之为a，b的最大公因数。
 
-**定理11.12** 设 d 是形如 ax + by 的最小正整数，则 d = gcd(a, b)。
+**定理11.12** 设 d 是形如 $ax + by$ 的最小正整数，则 $d = gcd(a, b)$。
 
 **定理11.13** 设d = gcd(a, b)，则一定存在整数x和y，使得 d = ax + by。
 
-**定理11.14** 一个正整数d = gcd(a, b)当且仅当d有下列两个性质：
+**定理11.14** 一个正整数$d = gcd(a, b)$当且仅当d有下列两个性质：
 
 1. d即整除a，又整除b
-2. 如果c既整数a又整除b，那么 c \mid d
+2. 如果c既整数a又整除b，那么 $c \mid d$
 
 下面是最大公因数的简单性质：
 
-1. gcd(a, b) = gcd(b, a)
-2. 如果 x > 0，那么 gcd(ax, bx) = x * gcd(a, b)
-3. 如果 d = gcd(a, b)，那么 gcd(a|d, b|d) = 1
-4. 对于任意整数x，gcd(a, b) = gcd(a, b + ax)
+1. $\gcd(a, b) = \gcd(b, a)$
+2. 如果 x > 0，那么 $\gcd(ax, bx) = x \times \gcd(a, b)$
+3. 如果 $d = \gcd(a, b)$，那么 $\gcd(a/d, b/d) = 1$
+4. 对于任意整数x，$\gcd(a, b) = \gcd(a, b + ax)$
 
 ### 带余除法
 
 直接求法：
-求gcd(a, b) ，通过列出a和b的所有因子，然后选择最大公因子来得出d。
+求$\gcd(a, b)$ ，通过列出a和b的所有因子，然后选择最大公因子来得出d。
 
-设 n = a + b， 计算因子的个数，这种代码方法的复杂性为O(\sqrt{n})
+设 n = a + b， 计算因子的个数，这种代码方法的复杂性为$O(\sqrt{n})$
 
-**带余除法** 复杂度为 O(\log{n})，可以求得最大公因数 d = gcd(a, b) 和 d = ax + by 中的 x, y。
+**带余除法** 复杂度为 $O(\log{n})$，可以求得最大公因数 $d = gcd(a, b)$ 和 $d = ax + by$ 中的 x, y。
 
 设a和b，通过用a除以b，然后重复地用余数除以除数直到余数为0。
 
@@ -278,9 +278,9 @@ $$
 
 **定理11.20** 设m是一个正整数，那也：
 
-    1. 对于任意整数a，有 $a \equiv a \bmod m$；（自反关系）
-    2. 如果 $a \equiv b \bmod m$，那么 $b \equiv a \bmod m)$；（对称关系）
-    3. 如果 $a \equiv b \bmod m$，$b\equiv c \bmod m$，那么 $a \equiv c\bmod m$；（传递关系）。
+1. 对于任意整数a，有 $a \equiv a \bmod m$；（自反关系）
+2. 如果 $a \equiv b \bmod m$，那么 $b \equiv a \bmod m)$；（对称关系）
+3. 如果 $a \equiv b \bmod m$，$b\equiv c \bmod m$，那么 $a \equiv c\bmod m$；（传递关系）。
 
 注： 设 m 是正数，a 是任意整数，由带余除法，存在整数 q 和 r(0 <= r < m)，使得 $a = mq + r$，因此：
 
@@ -357,7 +357,7 @@ $$
 $$
 ab \equiv ac(\text{mod}\ p) \land a \not\equiv 0(\text{mod}\ p) \implies b \equiv c(\text{mod}\ p)
 $$
-这样 Z_p ，模素数 p 的整数在数论上起到了特殊的作用。
+这样 $Z_p$ ，模素数 p 的整数在数论上起到了特殊的作用。
 
 **简化剩余系和欧拉函数**
 
@@ -382,9 +382,9 @@ $$
 a_ {n} x^n + a_ {n - 1} x ^{n - 1} + \cdots + a_ {1} x + a_ {0} \equiv 0 (\text{mod}\ m)
 $$
 
-这样的一个方程称为 n 次的，如果a_n \not\equiv 0 (\text{mod} 0).
+这样的一个方程称为 n 次的，如果$a_n \not\equiv 0 (\text{mod} 0)$.
 
-设 s \equiv t(\text{mod}\ m)，那么 s 是方程的解当且仅当 t 是方程的解。
+设 $s \equiv t(\text{mod}\ m)$，那么 s 是方程的解当且仅当 t 是方程的解。
 这样，方程的解的个数即为不同余的解的个数，即在下面集合中解的个数：
 $$
 \{ 0 , 1, 2, \cdots, m - 1 \}
@@ -392,7 +392,7 @@ $$
 
 这样，方程的**完全解**是不同余的解的最大集合，而方程的一般解则是所有满足的解，一般解可以通过把所有m的倍数加到完全解上得到。
 
-**定理11.25** 如果 a 和 m 互素，那么 ax \equiv 1 (\text{mod}\ m)有唯一解，否则无解。
+**定理11.25** 如果 a 和 m 互素，那么 $ax \equiv 1 (\text{mod}\ m)$有唯一解，否则无解。
 
 **线性同余方程**
 
@@ -400,21 +400,21 @@ $$
 $$
 ax \equiv b(\text{mod}\ m), a\not\equiv 0(\text{mod}\ m)
 $$
-**定理11.26** 设 a 和 m 互素，那么 ax \equiv b(\text{mod}\ m)有唯一解，另外，如果s是ax\equiv 1(\text{mod}\ m)的唯一解，那么：
+**定理11.26** 设 a 和 m 互素，那么 $ax \equiv b(\text{mod}\ m)$有唯一解，另外，如果s是$ax\equiv 1(\text{mod}\ m)$的唯一解，那么：
 $$
 x = bs
 $$
-是 ax \equiv b(\text{mod}\ m)的唯一解。
+是 $ax \equiv b(\text{mod}\ m)$的唯一解。
 
-**定理11.27** 设方程 ax \equiv b(\text{mod}\ m), d =\text{gcd}(a, m)
+**定理11.27** 设方程 $ax \equiv b(\text{mod}\ m), d =\text{gcd}(a, m)$
 
-1. 若 d 不整除 b，则 ax \equiv b(\text{mod\ m})无解
+1. 若 d 不整除 b，则 $ax \equiv b(\text{mod\ m})$无解
 
-2. 若 d 整除 b，则 ax\equiv b(\text{mod}\ m)有 d 个解，它们模 m 与下列方程的唯一解同余
+2. 若 d 整除 b，则 $ax\equiv b(\text{mod}\ m)$有 d 个解，它们模 m 与下列方程的唯一解同余
    $$
    Ax \equiv B(\text{mod}\ M)
    $$
-   其中，A = a/d, B = b/d，M = m/d。
+   其中，$A = a/d, B = b/d，M = m/d$。
 
    因为gcd(A, M) = 1，所以可运用定理11.26求Ax=B(mod M)的解。
 
