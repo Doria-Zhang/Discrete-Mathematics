@@ -319,7 +319,8 @@ $$
 
 定理11.21 设 $a \equiv c \bmod m$, $b \equiv d\bmod  m$，那么
     1. $a + b \equiv c + d \bmod m$
-    2. $a * b \equiv c * d (mod m)$
+
+2. $a  \times b \equiv c \times d (mod m)$
 
 **剩余类的运算**
 
@@ -394,6 +395,8 @@ $$
 
 **定理11.25** 如果 a 和 m 互素，那么 $ax \equiv 1 (\text{mod}\ m)$有唯一解，否则无解。
 
+称该解为 $a$ 模 $m$ 的逆, 记为 $\overline{a}$
+
 **线性同余方程**
 
 考虑更一般的同余方程
@@ -422,17 +425,17 @@ $$
 
 **定理11.28（中国剩余定理）** 设有方程组(*)
 $$
-x \equiv r_1 (\text{mod}\ m_1), x \equiv r_2(\text{mod}\ m_2), \cdots, x \equiv r_k (\text{mod}\ m_k)
+\begin{aligned} x & \equiv a_{1}\left(\bmod m_{1}\right) \\ x & \equiv a_{2}\left(\bmod m_{2}\right) \\ & \vdots \\ x & \equiv a_{n}\left(\bmod m_{n}\right) \end{aligned}
 $$
 
-m_i 两两互素，那么方程组有一模 M = m_1 m_2 ... m_k 的唯一解。
+$m_i$ 两两互素，那么方程组有一模 $M = m_1 m_2 ... m_k$ 的唯一解。
 
-**命题11.29** 考虑以上同余方程组(*)，设 M = m1 m2 ... m_k，且
+**命题11.29** 考虑以上同余方程组(*)，设 $M = m_1 m_2 ... m_k$，且
 $$
 M_1 = \frac{M}{m_1}, M_2 = \frac{M}{m_2}, \cdots, M_k = \frac{M}{m_k}
 $$
 
-(那么每一对 m_i 和 m_j 互素)，设 s_1, s_2, ...，s_k是下列还以方程的解
+(那么每一对 $m_i$ 和 $m_j$ 互素)，设 $s_1, s_2, ...，s_k$是下列还以方程的解
 
 $$
 M_1 x\equiv 1 (\text{mod}\ m_1), M_2 x \equiv 1(\text{mod}\ m_2), \cdots, M_k x \equiv 1 (\text{mod}\ m_k)
@@ -440,6 +443,37 @@ $$
 
 那么：
 $$
-x_0 = M_1 s_1 r_1 + M_2 s_2 r_2 + \cdots + M_k s_k r_k
+x_0 = M_1 s_1 a_1 + M_2 s_2 a_2 + \cdots + M_k s_k a_k
 $$
 是方程组的解。
+
+中国剩余定理可以将小于$M$的整数 $a$ 用一个 $n$ 元数组表示
+$$
+\left(a \bmod m_{1}, a \bmod m_{2}, \cdots, a \bmod m_{n}\right)
+$$
+这可以用于计算机中大整数的算术.
+
+### 费马小定理
+
+如果 $p$ 为素数, $p \nmid a$, 则有
+$$
+\begin{aligned} a^{p-1} & \equiv 1(\bmod p) \\ a^{\rho} & \equiv a(\bmod p) \end{aligned}
+$$
+
+### 伪素数
+
+由费马小定理知, 对于任何奇素数
+$$
+2^{n-1} \equiv 1(\bmod n)
+$$
+满足上式但并非素数的数称以2为基数的**伪素数**.
+
+一个正合数 $n$ 如果以所有满足 $\gcd(b,n)=1$ 的 $b$ 均为伪素数, 则它称为**米卡切尔数**
+
+### 原根和离散对数
+
+模素数 $p$ 的一个原根 $r$ 是 $Z_p$ 中的一个整数满足
+$$
+\{r^x \bmod p|x \in Z_p\}=Z_p
+$$
+
