@@ -393,7 +393,7 @@ $$
 
 这样，方程的**完全解**是不同余的解的最大集合，而方程的一般解则是所有满足的解，一般解可以通过把所有m的倍数加到完全解上得到。
 
-**定理11.25** 如果 a 和 m 互素，那么 $ax \equiv 1 (\text{mod}\ m)$有唯一解，否则无解。
+**定理11.25** 如果 a 和 m 互素，那么 $ax \equiv 1 \bmod m$有唯一解，否则无解。
 
 称该解为 $a$ 模 $m$ 的逆, 记为 $\overline{a}$
 
@@ -409,17 +409,17 @@ x = bs
 $$
 是 $ax \equiv b(\text{mod}\ m)$的唯一解。
 
-**定理11.27** 设方程 $ax \equiv b(\text{mod}\ m), d =\text{gcd}(a, m)$
+**定理11.27** 设方程 $ax \equiv b\bmod m, d =\text{gcd}(a, m)$
 
-1. 若 d 不整除 b，则 $ax \equiv b(\text{mod\ m})$无解
+1. 若 $d \nmid b$，则 $ax \equiv b(\text{mod m})$无解
 
-2. 若 d 整除 b，则 $ax\equiv b(\text{mod}\ m)$有 d 个解，它们模 m 与下列方程的唯一解同余
+2. 若 $d \mid b$，则 $ax\equiv b(\text{mod}\ m)$有 d 个解，它们模 m 与下列方程的唯一解同余
    $$
    Ax \equiv B(\text{mod}\ M)
    $$
    其中，$A = a/d, B = b/d，M = m/d$。
 
-   因为gcd(A, M) = 1，所以可运用定理11.26求Ax=B(mod M)的解。
+   因为gcd(A, M) = 1，所以可运用定理11.26求$Ax=B(mod M)$的解。
 
 ### 中国剩余定理
 
@@ -458,6 +458,13 @@ $$
 如果 $p$ 为素数, $p \nmid a$, 则有
 $$
 \begin{aligned} a^{p-1} & \equiv 1(\bmod p) \\ a^{\rho} & \equiv a(\bmod p) \end{aligned}
+$$
+
+### 欧拉定理
+
+如果 $\gcd(n,a)=1$
+$$
+a^{\varphi(n)} \equiv 1 \quad(\bmod n)
 $$
 
 ### 伪素数
