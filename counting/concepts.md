@@ -229,3 +229,79 @@ $$
 a_{n}=\alpha_{1} r_{1}^{n}+\alpha_{2} r_{2}^{n}+\cdots+\alpha_{k} r_{k}^{n}
 $$
 其中诸 $\alpha$ 的值由该递推关系的初始值解得.
+
+更一般地, 假设该方程有 $t$ 个不相等的根 $r_{1}, r_{2}, \cdots, r_{t}$, 其重数分别为 $m_{1}, \quad m_{2}, \cdots, \quad m_{t}$, 那么
+$$
+\begin{aligned} a_{n}=&\left(\alpha_{1,0}+\alpha_{1,1} n+\cdots+\alpha_{1, m_{1}-1} n^{m_{1}-1}\right) r_{1}^{n} \\ &+\left(\alpha_{2,0}+\alpha_{2,1} n+\cdots+\alpha_{2, m_{1}-1} n^{m_{1}-1}\right) r_{2}^{n} \\ &+\cdots+\left(\alpha_{t, 0}+\alpha_{t, 1} n+\cdots+\alpha_{t, m_{i}-1} n^{m_{i}-1}\right) r_{t}^{n} \end{aligned}
+$$
+对于常系数线性但非齐次的递推关系, 如
+$$
+a_{n}=c_{1} a_{n-1}+c_{2} a_{n-2}+\cdots+c_{k} a_{n-k}+F(n)
+$$
+递推关系 $a_{n}=\alpha_{1} r_{1}^{n}+\alpha_{2} r_{2}^{n}+\cdots+\alpha_{k} r_{k}^{n}$ 称为 **相伴的齐次线性递推关系**.
+
+如果 $\left\{a_{n}^{(p)}\right\}$ 是非齐次递推关系的一个特解, 那么它的每一个解都是 $\left\{a_{n}^{(p)}+a_{n}^{(h)}\right\}$ 的形式, 其中 $a_{n}^{(h)}$ 是相伴的齐次线性递推关系的一个解.
+
+当 $F(n)$ 的形式形如
+$$
+F(n)=\left(b_{t} n^{t}+b_{t-1} n^{t-1}+\cdots+b_{1} n+b_{0}\right) s^{n}
+$$
+我们可以知道它的一个特解
+$$
+\left(p_{t} n^{t}+p_{t-1} n^{t-1}+\cdots+p_{1} n+p_{0}\right) s^{n}
+$$
+当 $s$ 是相伴的递推关系特征方程的解时, 设它的重数为 $m$, 特解为
+$$
+n^{m}\left(p_{t} n^{t}+p_{t-1} n^{t-1}+\cdots+p_{1} n+p_{0}\right) s^{n}
+$$
+
+## 分治算法
+
+假设一个递归算法把一个规模为 $n$ 的问题分为 $a$ 个规模为 $n/b$ 的小问题, 此外, 该算法还需要 $g(n)$ 的额外运算来合并小问题的解, 即为
+$$
+f(n)=a f(n / b)+g(n)
+$$
+
+### 主定理
+
+设 $f$ 满足递推关系
+$$
+f(n)=a f(n / b)+c n^{d}
+$$
+那么
+$$
+f(n)=\left\{\begin{array}{ll}{O\left(n^{d}\right)} & {a<b^{d}} \\ {O\left(n^{d} \log n\right)} & {a=b^{d}} \\ {O\left(n^{\log _{b} a}\right)} & {a>b^{d}}\end{array}\right.
+$$
+
+生成函数
+
+实数序列 $a_{0}, \quad a_{1}, \cdots, a_{k}, \dots$ 的生成函数是无穷级数
+$$
+G(x)=a_{0}+a_{1} x+\cdots+a_{k} x^{k}+\cdots=\sum_{k=0}^{\infty} a_{k} x^{k}
+$$
+
+### 广义二项式系数
+
+设 $u$ 是实数且 $k$ 是非负整数. 那么广义二项式系数 $\left(\begin{array}{l}{u} \\ {k}\end{array}\right)$ 定义为
+$$
+\binom u k=\left\{\begin{array}{ll}{u(u-1) \cdots(u-k+1) / k !} & {k>0} \\ {1} & {k=0}\end{array}\right.
+$$
+
+### 广义二项式定理
+
+设 $x$ 是实数, $|x|<1$, $u$ 是实数
+$$
+(1+x)^{u}=\sum_{k=0}^{\infty}\left(\begin{array}{l}{u} \\ {k}\end{array}\right) x^{k}
+$$
+
+### 计数问题与生成函数
+
+
+
+## 容斥原理
+
+设 $A_{1}, A_{2}, \cdots, A_{n}$ 是有穷集, 那么
+$$
+\left|A_{1} \cup A_{2} \cup \cdots \cup A_{n}\right|=\\
+\sum_{1 \leq i \leq n}\left|A_{i}\right|-\sum_{1 \leqslant i<j \leqslant n}\left|A_{i} \cap A_{j}\right|+\sum_{1<i<j<k<n}\left|A_{i} \cap A_{j} \cap A_{k}\right|-\cdots+(-1)^{n+1}\left|A_{1} \cap A_{2} \cap \cdots \cap A_{n}\right|
+$$
