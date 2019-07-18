@@ -50,13 +50,8 @@ $A × A$ 通常也记作 $A^2$。
 笛卡尔积有以下性质：
   1. not commutative:
      $$
-     A \neq B \Rightarrow   A × B \neq B × A 
-$$
-     
-$$
-     A × B = B × A \iff A = B
+     A \neq B \Rightarrow   A × B \neq B × A
      $$
-
   2. $$
      n(A × B) = n(B × A) = n(A) n(B)
      $$
@@ -140,8 +135,8 @@ $$
 
 假定R是从A到B的一个关系，则R是一个有序偶的集合，在每个有序偶中，第一个元素来自A而第二元素来自B，即对于每一对$a ∈ A$ 和 $b ∈ B$，下列两种情况恰具其一：
 
-    1. $(a, b) ∈ R$，称 a 与 b 之间具有关系R，记作 $aRb$；
-    2. (a, b) ∉ R，称 a 与 b 之间不具有关系R，记作 $a\not Rb$；
+1. $(a, b) ∈ R$，称 a 与 b 之间具有关系R，记作 $aRb$；
+2. (a, b) ∉ R，称 a 与 b 之间不具有关系R，记作 $a\not Rb$；
 
 如果R是集合A到自身的一个关系，即 R 是 A^2 的一个子集，则称 R 是 A 上的一个关系。
 
