@@ -1,0 +1,103 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3803,         93]
+NotebookOptionsPosition[      2697,         66]
+NotebookOutlinePosition[      3156,         84]
+CellTagsIndexPosition[      3113,         81]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["MF IN FINTECH", "Title",
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.},
+ CellChangeTimes->{{3.751363145075364*^9, 3.7513631479317236`*^9}, 
+   3.7515792727576866`*^9, {3.770693272044351*^9, 
+   3.770693280369134*^9}},ExpressionUUID->"d722c311-c628-4df9-aafb-\
+3d316f4e005f"],
+
+Cell["\:8c22\:6cfd\:5065", "Author",
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.},
+ CellChangeTimes->{{3.7513631569096904`*^9, 3.751363160808262*^9}, 
+   3.7515792727576866`*^9},ExpressionUUID->"ba731beb-9862-4567-b67e-\
+6fb440e88381"],
+
+Cell["11810105", "Institution",
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.},
+ CellChangeTimes->{{3.751363163660637*^9, 3.7513631666865473`*^9}, 
+   3.7515792727581835`*^9},ExpressionUUID->"cc26ca51-1f9b-41fb-bfc9-\
+d54198cb7430"],
+
+Cell["HW4", "AbstractSection",
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.},
+ CellChangeTimes->{{3.751363182828395*^9, 3.751363186299117*^9}, 
+   3.7515792727581835`*^9, {3.752188711228119*^9, 3.75218871320887*^9}, {
+   3.752661261105838*^9, 3.7526612614818087`*^9}, {3.75270902021029*^9, 
+   3.752709020285407*^9}, {3.753335738567007*^9, 3.7533357393353415`*^9}, {
+   3.7635957086081443`*^9, 3.7635957240694375`*^9}, {3.770693283796838*^9, 
+   3.770693284511945*^9}, 3.7710637226583657`*^9, {3.771848344306651*^9, 
+   3.77184834446423*^9}, 
+   3.772596152334689*^9},ExpressionUUID->"2e15add1-a889-4948-9c50-\
+fe16cc4f576c"],
+
+Cell["2019.7.20", "Date",
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.},
+ CellChangeTimes->{{3.751363200261101*^9, 3.751363207826875*^9}, 
+   3.7515792727581835`*^9, {3.752188708658812*^9, 3.752188708767974*^9}, {
+   3.752661267348343*^9, 3.752661269812735*^9}, {3.7533357358643165`*^9, 
+   3.753335737101171*^9}, {3.7635957188713045`*^9, 3.7635957284185247`*^9}, {
+   3.767320902220867*^9, 3.7673209032073717`*^9}, {3.770693287643549*^9, 
+   3.7706932888752546`*^9}, {3.7715159045859337`*^9, 3.771515906794588*^9}, {
+   3.771848352254425*^9, 3.771848352641366*^9}, {3.7725961559360847`*^9, 
+   3.7725961565613832`*^9}},ExpressionUUID->"d65da0ed-20d1-4495-8d7c-\
+b97d6d41c46c"]
+}, Open  ]]
+},
+WindowSize->{1616, 2037},
+WindowMargins->{{Automatic, -14}, {Automatic, 0}},
+Magnification:>3. Inherited,
+FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (2018\:5e743\:670828\
+\:65e5)",
+StyleDefinitions->FrontEnd`FileName[{"Article"}, "JournalArticle.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 288, 5, 343, "Title",ExpressionUUID->"d722c311-c628-4df9-aafb-3d316f4e005f",
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.}],
+Cell[871, 29, 244, 4, 190, "Author",ExpressionUUID->"ba731beb-9862-4567-b67e-6fb440e88381",
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.}],
+Cell[1118, 35, 239, 4, 61, "Institution",ExpressionUUID->"cc26ca51-1f9b-41fb-bfc9-d54198cb7430",
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.}],
+Cell[1360, 41, 633, 10, 211, "AbstractSection",ExpressionUUID->"2e15add1-a889-4948-9c50-fe16cc4f576c",
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.}],
+Cell[1996, 53, 685, 10, 117, "Date",ExpressionUUID->"d65da0ed-20d1-4495-8d7c-b97d6d41c46c",
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.}]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
